@@ -1,4 +1,4 @@
-## Created Form Data Collection page
+## Created Data Collection Form
 
 <p>Used HTML, CSS and Javascript</p>
 
