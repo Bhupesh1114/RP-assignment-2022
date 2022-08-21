@@ -1,0 +1,134 @@
+:root{
+    --nav_bg : #000;
+}
+
+
+#header{
+    background-color: var(--nav_bg);
+    padding: 15px 20px;
+    color: #fff;
+    display:flex ;
+    align-items: center;
+}
+
+#header>a{
+    padding: 0px 20px;
+    letter-spacing: 5px;
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#header>a>span{
+    border-bottom: 2px solid red;
+}
+
+/* headerContainer */
+
+.headerContainer{
+    margin-left: auto;
+    width: 20%;
+    display: flex;
+}
+
+
+.headerContainer>div>a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0px 15px;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+}
+
+.headerInner{
+    position: relative;
+}
+
+.toolTip{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    background-color: #f1f1f1;
+    display: none;
+    top: 28px;
+    left: 0px;
+    color: #000;
+    border-radius: 5px;
+}
+
+.toolTip>a{
+    background-color: #ddd;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    margin: 10px 0px;
+}
+
+.darkMode{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.headerContainer>div>a:hover{
+    color: rgb(187, 184, 184);
+    border-bottom: 2px solid rgb(187, 184, 184);
+}
+
+
+.headerInner:hover div{
+    display: block;
+}
+
+
+@media screen and (max-width: 1410px){
+
+.headerContainer{
+    width: 28%;
+}
+}
+
+@media screen and (max-width: 1100px){
+
+.headerContainer{
+    width: 35%;
+}
+}
+@media screen and (max-width: 900px){
+
+.headerContainer{
+    width: 40%;
+}
+}
+@media screen and (max-width: 805px){
+
+.headerContainer{
+    width: 48%;
+}
+}
+@media screen and (max-width: 600px){
+
+.headerContainer{
+    width: 58%;
+}
+
+.headerContainer>div>a{
+    font-size: 18px;
+}
+
+}
+@media screen and (max-width: 480px){
+
+.headerContainer{
+    width: 65%;
+}
+
+.headerContainer>div>a{
+    font-size: 16px;
+    margin: 0px 10px;
+}
+#header>a{
+    padding: 0px 10px;
+}
+}
