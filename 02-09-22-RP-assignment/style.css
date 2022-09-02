@@ -48,7 +48,7 @@ main {
 }
 #card > .details > p {
   color: gray;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 #card > .details > img {
@@ -73,7 +73,6 @@ main {
   color: rgb(47, 150, 209);
   text-transform: uppercase;
   transition: background-color 0.4s ease-in-out;
-  margin-bottom: 20px;
   letter-spacing: 2px;
 }
 
