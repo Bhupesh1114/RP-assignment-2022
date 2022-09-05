@@ -18,6 +18,9 @@ $("document").ready(function () {
     };
     if (firstName && lastName && password && country !== "Choose Country") {
       userdata.push(formData);
+      $('[name = "firstname"]').val("")
+      $('[name = "lastname"]').val("")
+      $('[name = "password"]').val("")
       $("h3").hide();
     } else {
       $("h3").show();
