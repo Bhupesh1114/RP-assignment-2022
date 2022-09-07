@@ -1,0 +1,52 @@
+body {
+  position: relative;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+img {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 800px;
+  height: 500px;
+  display: none;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 2;
+  transition: all 0.4s ease-in-out;
+}
+
+.youtube_video {
+  width: 80%;
+  height: 70%;
+}
+.close {
+  font-size: 50px;
+  text-align: right;
+  padding: 0px 10px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+.body_overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  opacity: 0.3;
+}
