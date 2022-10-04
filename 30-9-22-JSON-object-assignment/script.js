@@ -91,7 +91,7 @@ const userDetails = () => {
       </table>
        `;
 
-  //  Appending table to its respective parent element
+  //  Appending table to its respective parent element  
   userTable ? (table_container.innerHTML = userTable) : "";
 };
 
