@@ -36,45 +36,52 @@ const users = {
   },
 };
 
-const userArr =  Object.entries(users);
+// Converting users data object into array
+const userArr = Object.entries(users);
+
+// function for thead data
 const theadData = () => {
   const keys = Object.keys(userArr[0][1]);
-   return  `
+  return `
    <tr>
-   ${keys.map(key => {
-     return`
+   ${keys
+     .map((key) => {
+       return `
      <td>${key}</td>
-     `
-  }).join("")}
+     `;
+     })
+     .join("")}
   </tr>
-   `
-}
+   `;
+};
 
+// Function for tbody data
 const tbodyData = () => {
-  let  tbody = ""
-  for(let [name, details] of  userArr){
+  let tbody = "";
+  for (let [name, details] of userArr) {
     const values = Object.values(details);
-   tbody += `
+    tbody += `
       <tr>
-      ${values.map(value => {
-        return`
+      ${values
+        .map((value) => {
+          return `
         <td class="td">${value}</td>
-        `
-      } ).join("")}
+        `;
+        })
+        .join("")}
       </tr>
-       `;    
+       `;
   }
   return tbody;
-}
+};
 
-
+// Function to show user deatils
 const userDetails = () => {
-    const userArr =  Object.entries(users);
-    const table_container = document.querySelector('.table_container')
-    let userTable = "";
+  const table_container = document.querySelector(".usertable_container");
+  let userTable = "";
 
-      userTable += `
-      <table class="table">
+  userTable += `
+      <table class="usertable">
       <thead>
       ${theadData()}
       </thead>
@@ -84,8 +91,8 @@ const userDetails = () => {
       </table>
        `;
 
-     userTable ? table_container.innerHTML = userTable : "";
+  //  Appending table to its respective parent element
+  userTable ? (table_container.innerHTML = userTable) : "";
 };
-
 
 userDetails();
